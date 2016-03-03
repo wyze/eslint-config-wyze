@@ -11,6 +11,9 @@ module.exports = {
       'ignoreUrls': true,
       'ignoreComments': false
     }],
+    // allow/disallow an empty newline after var statement
+    // https://github.com/eslint/eslint/blob/master/docs/rules/newline-after-var.md
+    'newline-after-var': [2, 'always'],
     // require or disallow use of semicolons instead of ASI
     // I use Babel, it takes care of this for me
     'semi': [2, 'never'],
