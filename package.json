@@ -19,7 +19,10 @@
     "*.js"
   ],
   "eslintConfig": {
-    "extends": "./base.js"
+    "extends": "./base.js",
+    "plugin": [
+      "wyze"
+    ]
   },
   "dependencies": {
     "babel-eslint": "^5.0.0",

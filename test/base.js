@@ -2,27 +2,21 @@ import base from '../base'
 import test from 'ava'
 
 test('extends length', async t => {
-  const expected = 4
+  const expected = 5
 
   t.is(base.extends.length, expected, 'Incorrect number of rulesets')
 })
 
 test('extends files', async t => {
-  const rulesets = [
-    'eslint-config-airbnb/base.js',
-    '/rules/best-practices.js',
-    '/rules/es6.js',
-    '/rules/style.js',
+  const expected = [
+    'airbnb/base',
+    'plugin:wyze/recommended',
+    './rules/best-practices.js',
+    './rules/es6.js',
+    './rules/style.js',
   ]
 
-  for ( const expected of rulesets ) {
-    const index = rulesets.indexOf(expected)
-
-    t.ok(
-      ~base.extends[index].indexOf(expected),
-      `${expected} not found in extends`
-    )
-  }
+  t.same(base.extends, expected, 'extending incorrect rules in `./base`')
 })
 
 test('parser', async t => {
