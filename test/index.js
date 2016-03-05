@@ -8,18 +8,11 @@ test('extends length', async t => {
 })
 
 test('extends files', async t => {
-  const rulesets = [
-    'eslint-config-airbnb/index.js',
-    '/base.js',
-    '/rules/react.js',
+  const expected = [
+    'airbnb',
+    './base.js',
+    './rules/react.js',
   ]
 
-  for ( const expected of rulesets ) {
-    const index = rulesets.indexOf(expected)
-
-    t.ok(
-      ~main.extends[index].indexOf(expected),
-      `${expected} not found in extends`
-    )
-  }
+  t.same(main.extends, expected, 'extending incorrect rules in `./index`')
 })
