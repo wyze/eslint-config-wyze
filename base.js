@@ -1,9 +1,10 @@
 module.exports = {
   extends: [
-    'eslint-config-airbnb/base',
-    './rules/best-practices',
-    './rules/es6',
-    './rules/style'
-  ].map(require.resolve),
+    'airbnb/base',
+    'plugin:wyze/recommended',
+    './rules/best-practices.js',
+    './rules/es6.js',
+    './rules/style.js'
+  ],
   parser: 'babel-eslint'
 };

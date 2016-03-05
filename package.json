@@ -24,7 +24,7 @@
   "dependencies": {
     "babel-eslint": "^5.0.0",
     "eslint-config-airbnb": "^6.0.0",
-    "eslint-plugin-wyze": "^1.0.0"
+    "eslint-plugin-wyze": "^1.2.0"
   },
   "peerDependencies": {
     "eslint": "^2.0.0",

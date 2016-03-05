@@ -21,9 +21,6 @@ module.exports = {
     // import sorting
     // http://eslint.org/docs/rules/sort-imports
     // disabled in favor of `wyze/sort-imports`
-    'sort-imports': 0,
-    // import sorting by default vs named
-    // https://github.com/wyze/eslint-plugin-wyze/docs/rules/sort-imports.md
-    'wyze/sort-imports': 2
+    'sort-imports': 0
   }
 };
