@@ -14,6 +14,9 @@ module.exports = {
     // allow/disallow an empty newline after var statement
     // https://github.com/eslint/eslint/blob/master/docs/rules/newline-after-var.md
     'newline-after-var': [2, 'always'],
+    // Require newline before return statement
+    // https://github.com/eslint/eslint/tree/master/docs/rules/newline-before-return.md
+    'newline-before-return': 2,
     // disallow multiple empty lines and only one newline at the end
     // https://github.com/eslint/eslint/blob/master/docs/rules/no-multiple-empty-lines.md
     'no-multiple-empty-lines': [2, { 'max': 2, 'maxBOF': 0, 'maxEOF': 1 }],
