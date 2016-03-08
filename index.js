@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'airbnb',
-    './base.js',
-    './rules/react.js'
+    'wyze/base',
+    'wyze/rules/react'
   ]
 };

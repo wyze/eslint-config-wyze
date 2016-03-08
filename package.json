@@ -19,10 +19,7 @@
     "*.js"
   ],
   "eslintConfig": {
-    "extends": "./base.js",
-    "plugin": [
-      "wyze"
-    ]
+    "extends": "./base.js"
   },
   "__comment_on_estraverse-fb": "needed as a dependency until fixed in babel-eslint or eslint 2.3.x",
   "dependencies": {

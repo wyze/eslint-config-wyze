@@ -2,9 +2,12 @@ module.exports = {
   extends: [
     'airbnb/base',
     'plugin:wyze/recommended',
-    './rules/best-practices.js',
-    './rules/es6.js',
-    './rules/style.js'
+    'wyze/rules/best-practices',
+    'wyze/rules/es6',
+    'wyze/rules/style'
   ],
-  parser: 'babel-eslint'
+  parser: 'babel-eslint',
+  plugins: [
+    'wyze'
+  ]
 };

@@ -4,9 +4,6 @@ module.exports = {
       'generators': true
     }
   },
-  'plugins': [
-    'wyze'
-  ],
   'rules': {
     // require parens in arrow function arguments
     'arrow-parens': [2, 'as-needed'],

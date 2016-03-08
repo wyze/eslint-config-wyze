@@ -11,9 +11,9 @@ test('extends files', async t => {
   const expected = [
     'airbnb/base',
     'plugin:wyze/recommended',
-    './rules/best-practices.js',
-    './rules/es6.js',
-    './rules/style.js',
+    'wyze/rules/best-practices',
+    'wyze/rules/es6',
+    'wyze/rules/style',
   ]
 
   t.same(base.extends, expected, 'extending incorrect rules in `./base`')
