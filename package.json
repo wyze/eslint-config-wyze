@@ -30,7 +30,8 @@
   },
   "peerDependencies": {
     "eslint": "^2.3.0",
-    "eslint-plugin-react": "^4.2.0"
+    "eslint-plugin-react": "^4.2.0",
+    "eslint-plugin-wyze": "^1.2.0"
   },
   "devDependencies": {
     "ava": "^0.12.0",
