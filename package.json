@@ -11,7 +11,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint test",
+    "lint": "eslint test",
+    "prelint": "npm link eslint-config-wyze",
+    "pretest": "npm run lint",
     "test": "ava"
   },
   "files": [
