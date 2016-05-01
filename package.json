@@ -24,7 +24,7 @@
     "extends": "./base.js"
   },
   "dependencies": {
-    "babel-eslint": "^6.0.3",
+    "babel-eslint": "^6.0.4",
     "eslint-config-airbnb": "^6.1.0",
     "eslint-plugin-wyze": "^1.3.0"
   },
