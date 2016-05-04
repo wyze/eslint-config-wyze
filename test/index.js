@@ -14,5 +14,5 @@ test('extends files', async t => {
     'wyze/rules/react',
   ]
 
-  t.same(main.extends, expected, 'extending incorrect rules in `./index`')
+  t.deepEqual(main.extends, expected, 'extending incorrect rules in `./index`')
 })

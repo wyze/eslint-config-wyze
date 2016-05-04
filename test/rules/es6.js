@@ -2,11 +2,9 @@ import { parserOptions, rules } from '../../rules/es6'
 import test from 'ava'
 
 test('no react rules', async t => {
-  for ( const rule in rules ) {
-    if ( rules.hasOwnProperty(rule) ) {
-      t.notOk(~rule.indexOf('react/'), 'found react rule in undesired file')
-    }
-  }
+  Object.keys(rules).forEach(rule => {
+    t.falsy(~rule.indexOf('react/'), 'found react rule in undesired file')
+  })
 })
 
 test('enable generator support', async t => {
@@ -16,5 +14,5 @@ test('enable generator support', async t => {
     },
   }
 
-  t.same(parserOptions, expected, 'parserOptions is not enabling generators')
+  t.deepEqual(parserOptions, expected, 'parserOptions doesnt enable generators')
 })

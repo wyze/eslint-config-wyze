@@ -16,7 +16,7 @@ test('extends files', async t => {
     'wyze/rules/style',
   ]
 
-  t.same(base.extends, expected, 'extending incorrect rules in `./base`')
+  t.deepEqual(base.extends, expected, 'extending incorrect rules in `./base`')
 })
 
 test('parser', async t => {
