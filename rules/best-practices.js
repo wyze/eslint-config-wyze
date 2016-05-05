@@ -1,5 +1,8 @@
 module.exports = {
   'rules': {
+    // require the use of === and !==
+    // http://eslint.org/docs/rules/eqeqeq
+    'eqeqeq': 2,
     // Blacklist certain identifiers to prevent them being used
     // http://eslint.org/docs/rules/id-blacklist
     'id-blacklist': [2,
