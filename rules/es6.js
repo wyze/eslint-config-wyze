@@ -4,6 +4,9 @@ module.exports = {
       'generators': true
     }
   },
+  'plugins': [
+    'import'
+  ],
   'rules': {
     // require parens in arrow function arguments
     'arrow-parens': [2, 'as-needed'],
@@ -22,6 +25,9 @@ module.exports = {
     // disallow duplicate imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'import/no-duplicates': 2,
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    'import/no-extraneous-dependencies': 2,
     // disallow arrow functions where they could be confused with comparisons
     // http://eslint.org/docs/rules/no-confusing-arrow
     'no-confusing-arrow': 0,
