@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint test",
-    "prelint": "npm link eslint-config-wyze",
+    "prelint": "npm link && npm link eslint-config-wyze",
     "pretest": "npm run lint",
     "test": "ava"
   },
@@ -21,7 +21,11 @@
     "*.js"
   ],
   "eslintConfig": {
-    "extends": "./base.js"
+    "extends": "./base.js",
+    "rules": {
+      "import/default": 0,
+      "import/named": 0
+    }
   },
   "dependencies": {
     "babel-eslint": "^6.0.4",
