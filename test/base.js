@@ -2,7 +2,7 @@ import base from '../base'
 import test from 'ava'
 
 test('extends length', async t => {
-  const expected = 5
+  const expected = 6
 
   t.is(base.extends.length, expected, 'Incorrect number of rulesets')
 })
@@ -13,6 +13,7 @@ test('extends files', async t => {
     'plugin:wyze/recommended',
     'wyze/rules/best-practices',
     'wyze/rules/es6',
+    'wyze/rules/legacy',
     'wyze/rules/style',
   ]
 

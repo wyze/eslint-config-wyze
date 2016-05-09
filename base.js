@@ -4,6 +4,7 @@ module.exports = {
     'plugin:wyze/recommended',
     'wyze/rules/best-practices',
     'wyze/rules/es6',
+    'wyze/rules/legacy',
     'wyze/rules/style'
   ],
   parser: 'babel-eslint',
