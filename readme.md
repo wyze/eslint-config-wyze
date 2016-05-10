@@ -9,10 +9,16 @@
 
 ## Installation
 
-There are `peerDependencies` on `eslint`, `eslint-plugin-react`, `eslint-plugin-wyze`. If using without React then you can omit the `eslint-plugin-react` package from the below command.
+Project with React:
 
 ```shell
-$ npm i --save-dev eslint-config-wyze eslint-plugin-react eslint
+$ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-wyze
+```
+
+Project without React:
+
+```shell
+$ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-wyze
 ```
 
 ## Usage
