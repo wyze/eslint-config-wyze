@@ -18,7 +18,7 @@ $ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-
 Project without React:
 
 ```shell
-$ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-wyze
+$ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-wyze
 ```
 
 ## Usage
