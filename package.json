@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "babel-eslint": "^6.1.0"
+    "babel-eslint": "^6.1.2"
   },
   "peerDependencies": {
     "eslint": "^2.9.0",
