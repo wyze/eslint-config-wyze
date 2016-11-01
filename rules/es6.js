@@ -1,7 +1,4 @@
 module.exports = {
-  'plugins': [
-    'import'
-  ],
   'rules': {
     // require parens in arrow function arguments
     'arrow-parens': [2, 'as-needed'],

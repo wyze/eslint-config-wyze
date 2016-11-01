@@ -21,7 +21,7 @@ test('extends files', async t => {
 })
 
 test('plugins', async t => {
-  const expected = [ 'wyze' ]
+  const expected = [ 'import', 'wyze' ]
 
   t.deepEqual(base.plugins, expected, `plugins are not set to ${expected}`)
 })
