@@ -1,5 +1,7 @@
 module.exports = {
   'rules': {
+    // require parens in arrow function arguments
+    'arrow-parens': [ 2, 'as-needed' ],
     // ensure default import coupled with default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md#when-not-to-use-it
     'import/default': 2,
