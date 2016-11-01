@@ -1,4 +1,4 @@
-import { parserOptions, rules } from '../../rules/es6'
+import { rules } from '../../rules/es6'
 import test from 'ava'
 
 test('no react rules', async t => {
@@ -7,12 +7,3 @@ test('no react rules', async t => {
   })
 })
 
-test('enable generator support', async t => {
-  const expected = {
-    ecmaFeatures: {
-      generators: true,
-    },
-  }
-
-  t.deepEqual(parserOptions, expected, 'parserOptions doesnt enable generators')
-})

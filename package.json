@@ -27,11 +27,8 @@
       "import/named": 0
     }
   },
-  "dependencies": {
-    "babel-eslint": "^6.1.2"
-  },
   "peerDependencies": {
-    "eslint": "^3.0.0",
+    "eslint": "^3.9.0",
     "eslint-config-airbnb": "^10.0.0",
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.0.0",
@@ -40,7 +37,7 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
-    "eslint": "^3.3.0",
+    "eslint": "^3.9.1",
     "eslint-config-airbnb": "^10.0.1",
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",

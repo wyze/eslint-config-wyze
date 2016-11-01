@@ -20,8 +20,20 @@ test('extends files', async t => {
   t.deepEqual(base.extends, expected, 'extending incorrect rules in `./base`')
 })
 
-test('parser', async t => {
-  const expected = 'babel-eslint'
+test('plugins', async t => {
+  const expected = [ 'wyze' ]
 
-  t.is(base.parser, expected, `parser is not set to ${expected}`)
+  t.deepEqual(base.plugins, expected, `plugins are not set to ${expected}`)
+})
+
+test('parserOptions are set correcty', t => {
+  const expected = {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
+    ecmaVersion: 2017,
+    sourceType: 'module',
+  }
+
+  t.deepEqual(base.parserOptions, expected)
 })

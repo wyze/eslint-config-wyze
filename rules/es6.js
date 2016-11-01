@@ -1,9 +1,4 @@
 module.exports = {
-  'parserOptions': {
-    'ecmaFeatures': {
-      'generators': true
-    }
-  },
   'plugins': [
     'import'
   ],

@@ -7,7 +7,13 @@ module.exports = {
     'wyze/rules/legacy',
     'wyze/rules/style'
   ],
-  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    },
+    ecmaVersion: 2017,
+    sourceType: 'module'
+  },
   plugins: [
     'wyze'
   ]
