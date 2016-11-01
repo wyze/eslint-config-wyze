@@ -5,17 +5,17 @@ module.exports = {
     'wyze/rules/best-practices',
     'wyze/rules/es6',
     'wyze/rules/legacy',
-    'wyze/rules/style'
+    'wyze/rules/style',
   ],
   parserOptions: {
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
+      experimentalObjectRestSpread: true,
     },
     ecmaVersion: 2017,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
     'import',
-    'wyze'
-  ]
-};
+    'wyze',
+  ],
+}

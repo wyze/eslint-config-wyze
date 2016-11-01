@@ -1,13 +1,13 @@
 module.exports = {
   extends: [
     'wyze',
-    'wyze/rules/preact'
+    'wyze/rules/preact',
   ],
   settings: {
     react: {
       createClass: 'h',
       pragma: 'preact',
-      version: '6.0'
-    }
-  }
+      version: '6.0',
+    },
+  },
 }
