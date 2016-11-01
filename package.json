@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wyze",
-  "version": "3.0.0",
+  "version": "4.0.0-beta.1",
   "description": "My personal ESLint config.",
   "license": "MIT",
   "repository": "wyze/eslint-config-wyze",
