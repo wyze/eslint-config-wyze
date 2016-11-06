@@ -5,7 +5,9 @@ module.exports = {
     'react/display-name': 'error',
     // Forbid certain propTypes (any, array, object)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-    'react/forbid-prop-types': [ 'error', { forbid: [ 'any', 'array', 'object' ] }],
+    'react/forbid-prop-types': [
+      'error', { forbid: [ 'any', 'array', 'object' ] },
+    ],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-curly-spacing': [ 'error', 'never', { allowMultiline: true }],
