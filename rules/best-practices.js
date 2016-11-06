@@ -2,10 +2,10 @@ module.exports = {
   rules: {
     // require the use of === and !==
     // http://eslint.org/docs/rules/eqeqeq
-    eqeqeq: 2,
+    eqeqeq: 'error',
     // Blacklist certain identifiers to prevent them being used
     // http://eslint.org/docs/rules/id-blacklist
-    'id-blacklist': [ 2,
+    'id-blacklist': [ 'error',
       'callback',
       'cb',
       'data',
@@ -14,6 +14,6 @@ module.exports = {
     ],
     // disallow unmodified conditions of loops
     // http://eslint.org/docs/rules/no-unmodified-loop-condition
-    'no-unmodified-loop-condition': 2,
+    'no-unmodified-loop-condition': 'error',
   },
 }
