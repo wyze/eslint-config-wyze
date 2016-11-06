@@ -7,7 +7,7 @@ test('extends files', t => {
     'wyze/rules/flow',
   ]
 
-  t.deepEqual(flow.extends, expected, 'extending incorrect rules')
+  t.deepEqual(flow.extends, expected)
 })
 
 test('parser is set correctly', t => {

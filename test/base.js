@@ -1,12 +1,6 @@
 import base from '../base'
 import test from 'ava'
 
-test('extends length', t => {
-  const expected = 6
-
-  t.is(base.extends.length, expected, 'Incorrect number of rulesets')
-})
-
 test('extends files', t => {
   const expected = [
     'airbnb/base',
@@ -17,13 +11,16 @@ test('extends files', t => {
     'wyze/rules/style',
   ]
 
-  t.deepEqual(base.extends, expected, 'extending incorrect rules in `./base`')
+  t.deepEqual(base.extends, expected)
 })
 
 test('plugins', t => {
-  const expected = [ 'import', 'wyze' ]
+  const expected = [
+    'import',
+    'wyze',
+  ]
 
-  t.deepEqual(base.plugins, expected, `plugins are not set to ${expected}`)
+  t.deepEqual(base.plugins, expected)
 })
 
 test('parserOptions are set correcty', t => {
