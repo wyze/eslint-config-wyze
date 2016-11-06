@@ -9,19 +9,19 @@
 
 ## Installation
 
-Project with React:
+### React/Preact
 
-```shell
+```sh
 $ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-wyze
 ```
 
-Project without React:
+### Non-React
 
-```shell
+```sh
 $ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-wyze
 ```
 
-Project with Flow:
+### Flow
 
 ```sh
 $ npm i --save-dev babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
@@ -33,18 +33,33 @@ $ npm i --save-dev babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
 
 ```js
 {
-  // ...
+  // React
   "eslintConfig": {
     "extends": "wyze"
   }
-}
-```
 
-### .eslintrc
+  // Preact
+  "eslintConfig": {
+    "extends": "wyze/preact"
+  }
 
-```js
-{
-  "extends": "wyze"
+  // Non-React
+  "eslintConfig": {
+    "extends": "wyze/base"
+  }
+
+  // Flow
+  "eslintConfig": {
+    "extends": "wyze/flow"
+  }
+
+  // Multiple (React + Flow)
+  "eslintConfig": {
+    "extends": [
+      "wyze",
+      "wyze/flow"
+    ]
+  }
 }
 ```
 
