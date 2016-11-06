@@ -21,6 +21,12 @@ Project without React:
 $ npm i --save-dev eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-wyze
 ```
 
+Project with Flow:
+
+```sh
+$ npm i --save-dev babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
+```
+
 ## Usage
 
 ### package.json
