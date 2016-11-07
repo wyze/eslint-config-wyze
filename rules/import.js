@@ -4,8 +4,12 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md#when-not-to-use-it
     'import/default': 'error',
     // disallow non-import statements appearing before import statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
+    'import/first': [ 'error', '' ],
+    // disallow non-import statements appearing before import statements
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md
-    'import/imports-first': [ 'error', '' ],
+    // deprecated: use `import/first`
+    'import/imports-first': 'off',
     // ensure named imports coupled with named exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
     'import/named': 'error',
