@@ -6,6 +6,9 @@ module.exports = {
     // disallow duplicate keys in types
     // https://github.com/gajus/eslint-plugin-flowtype#no-dupe-keys
     'flowtype/no-dupe-keys': 'error',
+    // disallow use of primitive constructor types (e.g., Boolean, String)
+    // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-primitive-constructor-types
+    'flowtype/no-primitive-constructor-types': 'error',
     // better to be specific, but only warn
     // https://github.com/gajus/eslint-plugin-flowtype#no-weak-types
     'flowtype/no-weak-types': 'warn',
@@ -21,6 +24,9 @@ module.exports = {
     // warn when a file isn't typed
     // https://github.com/gajus/eslint-plugin-flowtype#require-valid-file-annotation
     'flowtype/require-valid-file-annotation': 'warn',
+    // warn when variable isn't type annotated
+    // https://github.com/gajus/eslint-plugin-flowtype/tree/v2.29.2#eslint-plugin-flowtype-rules-require-variable-type
+    'flowtype/require-variable-type': 'warn',
     // ew, semicolons
     // https://github.com/gajus/eslint-plugin-flowtype#semi
     'flowtype/semi': [ 'error', 'never' ],
