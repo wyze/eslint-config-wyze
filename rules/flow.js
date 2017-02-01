@@ -24,9 +24,6 @@ module.exports = {
     // warn when a file isn't typed
     // https://github.com/gajus/eslint-plugin-flowtype#require-valid-file-annotation
     'flowtype/require-valid-file-annotation': 'warn',
-    // warn when variable isn't type annotated
-    // https://github.com/gajus/eslint-plugin-flowtype/tree/v2.29.2#eslint-plugin-flowtype-rules-require-variable-type
-    'flowtype/require-variable-type': 'warn',
     // ew, semicolons
     // https://github.com/gajus/eslint-plugin-flowtype#semi
     'flowtype/semi': [ 'error', 'never' ],
