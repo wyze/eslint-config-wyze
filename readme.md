@@ -65,7 +65,7 @@ $ npm i --save-dev babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
 
 ## License
 
-Copyright © 2016 [Neil Kistner](//github.com/wyze)
+Copyright © 2016-2017 [Neil Kistner](//github.com/wyze)
 
 Released under the MIT license. See [license](license) for details.
 
