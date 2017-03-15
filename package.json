@@ -11,16 +11,24 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint rules *.js",
     "prelint": "npm link && npm link eslint-config-wyze",
     "pretest": "npm run lint",
-    "test": "ava"
+    "test": "jest"
   },
   "files": [
     "rules",
     "*.js"
   ],
+  "babel": {
+    "plugins": [
+      "transform-inline-imports-commonjs"
+    ]
+  },
   "eslintConfig": {
+    "env": {
+      "jest": true
+    },
     "extends": "./base.js",
     "rules": {
       "import/default": 0,
@@ -39,14 +47,16 @@
     "eslint-plugin-wyze": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.18.1",
     "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "eslint-plugin-wyze": "^2.0.0"
+    "eslint-plugin-wyze": "^2.0.0",
+    "jest": "^19.0.2"
   }
 }
