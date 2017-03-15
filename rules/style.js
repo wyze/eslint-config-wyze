@@ -1,10 +1,7 @@
 module.exports = {
   rules: {
     // enforce spacing inside array brackets
-    'array-bracket-spacing': [ 'error', 'always', {
-      objectsInArrays: false,
-      arraysInArrays: false,
-    }],
+    'array-bracket-spacing': [ 'error', 'always' ],
     // allow/disallow an empty newline after var statement
     // https://github.com/eslint/eslint/blob/master/docs/rules/newline-after-var.md
     'newline-after-var': [ 'error', 'always' ],
