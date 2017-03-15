@@ -5,12 +5,6 @@ module.exports = {
       objectsInArrays: false,
       arraysInArrays: false,
     }],
-    // specify the maximum length of a line in your program
-    // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
-    'max-len': [ 'error', 80, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-    }],
     // allow/disallow an empty newline after var statement
     // https://github.com/eslint/eslint/blob/master/docs/rules/newline-after-var.md
     'newline-after-var': [ 'error', 'always' ],
