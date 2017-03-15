@@ -11,5 +11,6 @@ cache:
   directories:
     - $HOME/.cache
 
-before_install:
-  - npm i -g npm@latest
+before_script:
+  # yarn link/npm link doesn't work for some reason :(
+  - yarn add --dev eslint-config-wyze
