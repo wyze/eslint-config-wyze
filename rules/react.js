@@ -10,7 +10,7 @@ module.exports = {
     ],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-    'react/jsx-curly-spacing': [ 'error', 'never', { allowMultiline: true }],
+    'react/jsx-curly-spacing': [ 'error', 'never', { allowMultiline: true } ],
     // Enforce or disallow spaces around equal signs in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
     'react/jsx-equals-spacing': [ 'error', 'never' ],
@@ -28,7 +28,7 @@ module.exports = {
     'react/jsx-sort-props': [ 'error', {
       callbacksLast: true,
       shorthandFirst: true,
-    }],
+    } ],
     // Validate spacing before closing bracket in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
     'react/jsx-space-before-closing': [ 'error', 'always' ],
@@ -48,6 +48,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-prop-types.md
     'react/sort-prop-types': [ 'error', {
       requiredFirst: true,
-    }],
+    } ],
   },
 }
