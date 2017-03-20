@@ -66,6 +66,14 @@ babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
 }
 ```
 
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v4.1.0](https://github.com/wyze/eslint-config-wyze/releases/tag/v4.1.0) (2017-02-06)
+
+* [[`693f225e9e`](https://github.com/wyze/eslint-config-wyze/commit/693f225e9e)] - Upgrade dependencies (Neil Kistner)
+
 ## License
 
 MIT © [Neil Kistner](https://neilkistner.com)

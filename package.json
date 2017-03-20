@@ -11,10 +11,12 @@
   },
   "main": "index.js",
   "scripts": {
+    "changelog": "changelog-maker --filter-release -- wyze eslint-config-wyze",
     "lint": "eslint rules *.js",
     "prelint": "npm link && npm link eslint-config-wyze",
     "pretest": "npm run lint",
-    "test": "jest"
+    "test": "jest",
+    "version": "node scripts/version.js"
   },
   "files": [
     "rules",
@@ -50,6 +52,7 @@
     "babel-eslint": "^7.1.1",
     "babel-jest": "^19.0.0",
     "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
+    "changelog-maker": "^2.2.5",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-flowtype": "^2.30.3",
@@ -57,6 +60,8 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.2",
     "eslint-plugin-wyze": "^3.0.1",
-    "jest": "^19.0.2"
+    "execa": "^0.6.2",
+    "jest": "^19.0.2",
+    "read-pkg": "^2.0.0"
   }
 }
