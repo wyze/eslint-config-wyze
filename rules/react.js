@@ -25,10 +25,7 @@ module.exports = {
     'react/jsx-no-duplicate-props': 'error',
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-    'react/jsx-sort-props': [ 'error', {
-      callbacksLast: true,
-      shorthandFirst: true,
-    } ],
+    'react/jsx-sort-props': 'error',
     // Validate spacing before closing bracket in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
     'react/jsx-space-before-closing': [ 'error', 'always' ],
