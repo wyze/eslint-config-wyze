@@ -22,9 +22,34 @@ const getVersionAndUrl =
     return { url, version }
   }
 
+// get previous version from changelog
+const getPreviousVersion = ({ url, version }) => {
+  const file = 'changelog.md'
+  const changelog = readFile(file).toString().split('\n')
+  const regex = /\[(v\d+\.\d+\.\d+)\]/
+  const previous = changelog
+    .filter(change => regex.test(change))
+    .shift()
+    .match(/\[(v\d+\.\d+\.\d+)\]/)
+    .slice(1, 2)
+    .pop()
+
+  return { previous, url, version }
+}
+
 // npm run changelog (and grab output)
-const getChanges = ({ url, version }) => {
-  const { stdout } = execa.sync('npm', [ 'run', 'changelog', '--silent' ])
+const getChanges = ({ previous, url, version }) => {
+  const args = [
+    'run',
+    'changelog',
+    '--silent',
+    '--',
+    '--start-ref',
+    previous,
+    'wyze',
+    'eslint-config-wyze',
+  ]
+  const { stdout } = execa.sync('npm', args)
   const changes = stdout.trim().split(' \n')
     // Filter beta releases because `changelog-maker` doesn't
     .filter(msg => !isBeta(msg))
@@ -78,6 +103,7 @@ const runGitAdd = () => {
 
 readPkg()
   .then(getVersionAndUrl)
+  .then(getPreviousVersion)
   .then(getChanges)
   .then(updateChangelog)
   .then(updateReadme)

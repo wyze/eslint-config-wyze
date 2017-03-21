@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "changelog": "changelog-maker --filter-release -- wyze eslint-config-wyze",
+    "changelog": "changelog-maker --filter-release",
     "lint": "eslint rules *.js",
     "prelint": "npm link && npm link eslint-config-wyze",
     "pretest": "npm run lint",
