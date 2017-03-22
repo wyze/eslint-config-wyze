@@ -15,13 +15,13 @@ Use `yarn add --dev <packages>` where `<packages>` are as follows:
 ### React/Preact
 
 ```
-eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-wyze
+eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-wyze
 ```
 
 ### Non-React
 
 ```
-eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-import eslint-plugin-wyze
+eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-wyze
 ```
 
 ### Flow

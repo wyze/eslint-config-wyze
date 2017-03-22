@@ -16,6 +16,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    'eslint-comments',
     'import',
     'wyze',
   ],

@@ -17,6 +17,7 @@ describe('base config', () => {
 
   it('specifies plugins', () => {
     const expected = [
+      'eslint-comments',
       'import',
       'wyze',
     ]
