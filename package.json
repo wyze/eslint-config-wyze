@@ -19,7 +19,8 @@
     "version": "node scripts/version.js"
   },
   "files": [
-    "rules",
+    "!**/__tests__/",
+    "rules/*.js",
     "*.js"
   ],
   "babel": {
