@@ -6,6 +6,7 @@ describe('main config', () => {
       'airbnb',
       'wyze/base',
       'wyze/rules/react',
+      'wyze/rules/react-a11y',
     ]
 
     expect(main.extends).toEqual(expected)
