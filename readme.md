@@ -8,26 +8,30 @@
 
 ## Installation
 
-Use `yarn add --dev <packages>` where `<packages>` are as follows:
+> *Note*: The below commands will generate the command you will need to run for installation. You can replace `yarn add --dev` with `npm i --save-dev` if not using Yarn.
 
-> **Note**: You can also do `npm i --save-dev <packages>`.
+### Base
 
-### React/Preact
-
+```sh
+(
+  export PKG=eslint-config-wyze; npm info $PKG config.basePeers --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs echo yarn add --dev $PKG
+)
 ```
-eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-wyze
-```
 
-### Non-React
+### Preact/React
 
-```
-eslint eslint-config-airbnb eslint-config-wyze eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-wyze
+```sh
+(
+  export PKG=eslint-config-wyze; npm info $PKG config.reactPeers --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs echo yarn add --dev $PKG
+)
 ```
 
 ### Flow
 
-```
-babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
+```sh
+(
+  export PKG=eslint-config-wyze; npm info $PKG config.flowPeers --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs echo yarn add --dev $PKG
+)
 ```
 
 ## Usage
@@ -65,6 +69,20 @@ babel-eslint eslint eslint-config-wyze eslint-plugin-flowtype
   }
 }
 ```
+
+## Peer Dependencies
+
+| Package | Base | Preact/React | Flow |
+|---------|:----:|:------------:|:----:|
+| babel-eslint | | | :package: |
+| eslint | :package: | :package: | :package: |
+| eslint-config-airbnb | :package: | :package: | |
+| eslint-plugin-eslint-comments | :package: | :package: | |
+| eslint-plugin-flowtype | | | :package: |
+| eslint-plugin-import | :package: | :package: | |
+| eslint-plugin-jsx-a11y | | :package: | |
+| eslint-plugin-react | | :package: | |
+| eslint-plugin-wyze | :package: | :package: | |
 
 ## Change Log
 
